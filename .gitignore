@@ -1,0 +1,14 @@
+*.suo
+*.pdb
+*.dll
+*.exe
+*.db
+
+bin/
+obj/
+
+gendan/proj/dll/bin/
+gendan/proj/dll/obj/
+
+gendan/WinMain/dll/obj/
+gendan/WinMain/dll/bin/

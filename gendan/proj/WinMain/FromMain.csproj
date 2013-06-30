@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8221C005-CB10-4FF1-B47C-C3DF870E7976}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsTemplete</RootNamespace>
+    <AssemblyName>WindowsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Src\Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\打样进度.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\打样进度.Designer.cs">
+      <DependentUpon>打样进度.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\生产进度.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\生产进度.Designer.cs">
+      <DependentUpon>生产进度.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\出货记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\出货记录.Designer.cs">
+      <DependentUpon>出货记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\出运.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\出运.Designer.cs">
+      <DependentUpon>出运.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\进仓.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\出货记录\进仓.Designer.cs">
+      <DependentUpon>进仓.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\ViewTemplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\ViewTemplete.Designer.cs">
+      <DependentUpon>ViewTemplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\其他厂商\其他厂商.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\其他厂商\其他厂商.Designer.cs">
+      <DependentUpon>其他厂商.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\客户\客户.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\客户\客户.Designer.cs">
+      <DependentUpon>客户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\工作日历\工作日历.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\工作日历\工作日历.Designer.cs">
+      <DependentUpon>工作日历.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\快递记录\快递记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\快递记录\快递记录.Designer.cs">
+      <DependentUpon>快递记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\打样\打样.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\打样\打样.Designer.cs">
+      <DependentUpon>打样.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\文件库\文件库\文件库.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\文件库\文件库\文件库.Designer.cs">
+      <DependentUpon>文件库.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\服装厂\服装厂.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\服装厂\服装厂.Designer.cs">
+      <DependentUpon>服装厂.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\特殊工艺\特殊工艺.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\特殊工艺\特殊工艺.Designer.cs">
+      <DependentUpon>特殊工艺.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\生产\生产.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\生产\生产.Designer.cs">
+      <DependentUpon>生产.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\联系人\联系人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\关系管理\联系人\联系人.Designer.cs">
+      <DependentUpon>联系人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\订单\订单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\订单管理\订单\订单.Designer.cs">
+      <DependentUpon>订单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\辅料\辅料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\辅料\辅料.Designer.cs">
+      <DependentUpon>辅料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\进度跟踪.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\任务管理\进度跟踪\进度跟踪.Designer.cs">
+      <DependentUpon>进度跟踪.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\面料\面料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\Form\SubForm\物料管理\面料\面料.Designer.cs">
+      <DependentUpon>面料.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Src\Form\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Src\Form\SubForm\任务管理\进度跟踪\打样进度.resx">
+      <DependentUpon>打样进度.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\任务管理\进度跟踪\生产进度.resx">
+      <DependentUpon>生产进度.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\出货记录\出货记录.resx">
+      <DependentUpon>出货记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\出货记录\出运.resx">
+      <DependentUpon>出运.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\出货记录\进仓.resx">
+      <DependentUpon>进仓.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\ViewTemplete.resx">
+      <DependentUpon>ViewTemplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\关系管理\其他厂商\其他厂商.resx">
+      <DependentUpon>其他厂商.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\关系管理\客户\客户.resx">
+      <DependentUpon>客户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\任务管理\工作日历\工作日历.resx">
+      <DependentUpon>工作日历.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\快递记录\快递记录.resx">
+      <DependentUpon>快递记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\打样\打样.resx">
+      <DependentUpon>打样.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\文件库\文件库\文件库.resx">
+      <DependentUpon>文件库.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\关系管理\服装厂\服装厂.resx">
+      <DependentUpon>服装厂.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\物料管理\特殊工艺\特殊工艺.resx">
+      <DependentUpon>特殊工艺.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\生产\生产.resx">
+      <DependentUpon>生产.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\关系管理\联系人\联系人.resx">
+      <DependentUpon>联系人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\订单管理\订单\订单.resx">
+      <DependentUpon>订单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\物料管理\辅料\辅料.resx">
+      <DependentUpon>辅料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\任务管理\进度跟踪\进度跟踪.resx">
+      <DependentUpon>进度跟踪.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Src\Form\SubForm\物料管理\面料\面料.resx">
+      <DependentUpon>面料.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dll\Chatlist.csproj">
+      <Project>{8F34E30F-DE61-416F-A3B0-B015AF578489}</Project>
+      <Name>Chatlist</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\出货记录.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\打样.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\订单.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\服装厂.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\辅料.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\工作日历.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\进度跟踪.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\客户.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\快递记录.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\联系人.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\面料.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\其他厂商.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\生产.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\特殊工艺.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head\文件库.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Src\Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
