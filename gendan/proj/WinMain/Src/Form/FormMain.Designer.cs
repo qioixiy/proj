@@ -36,7 +36,11 @@ namespace FormMain
             this.label_menu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chatListBox1 = new _CUSTOM_CONTROLS.ChatListBox();
+            this.picbox_close = new System.Windows.Forms.PictureBox();
+            this.picbox_mini = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_mini)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -145,6 +149,30 @@ namespace FormMain
             this.chatListBox1.MouseLeaveHead += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_MouseLeaveHead);
             this.chatListBox1.Click += new System.EventHandler(this.chatListBox1_Click);
             // 
+            // picbox_close
+            // 
+            this.picbox_close.BackColor = System.Drawing.Color.Teal;
+            this.picbox_close.Location = new System.Drawing.Point(212, 3);
+            this.picbox_close.Name = "picbox_close";
+            this.picbox_close.Size = new System.Drawing.Size(32, 23);
+            this.picbox_close.TabIndex = 9;
+            this.picbox_close.TabStop = false;
+            this.picbox_close.Click += new System.EventHandler(this.picbox_close_Click);
+            this.picbox_close.MouseEnter += new System.EventHandler(this.picbox_close_MouseEnter);
+            this.picbox_close.MouseLeave += new System.EventHandler(this.picbox_close_MouseLeave);
+            // 
+            // picbox_mini
+            // 
+            this.picbox_mini.BackColor = System.Drawing.Color.Teal;
+            this.picbox_mini.Location = new System.Drawing.Point(178, 3);
+            this.picbox_mini.Name = "picbox_mini";
+            this.picbox_mini.Size = new System.Drawing.Size(32, 23);
+            this.picbox_mini.TabIndex = 10;
+            this.picbox_mini.TabStop = false;
+            this.picbox_mini.Click += new System.EventHandler(this.picbox_mini_Click);
+            this.picbox_mini.MouseEnter += new System.EventHandler(this.picbox_mini_MouseEnter);
+            this.picbox_mini.MouseLeave += new System.EventHandler(this.picbox_mini_MouseLeave);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -152,6 +180,8 @@ namespace FormMain
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(247, 549);
+            this.Controls.Add(this.picbox_mini);
+            this.Controls.Add(this.picbox_close);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_menu);
             this.Controls.Add(this.btn_close);
@@ -176,6 +206,8 @@ namespace FormMain
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_mini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +237,14 @@ namespace FormMain
         private System.Drawing.Point mouse_offset;
         private System.Windows.Forms.Label label_menu;
         private System.Windows.Forms.PictureBox pictureBox1;
+
+        private System.Windows.Forms.PictureBox picbox_close;
+        private System.Drawing.Color col_enter_picbox_close = System.Drawing.Color.PaleGreen;
+        private System.Drawing.Color col_leave_picbox_close = System.Drawing.Color.Teal;
+
+        private System.Windows.Forms.PictureBox picbox_mini;
+        private System.Drawing.Color col_enter_picbox_mini = System.Drawing.Color.PaleGreen;
+        private System.Drawing.Color col_leave_picbox_mini = System.Drawing.Color.Teal;
     }
 }
 

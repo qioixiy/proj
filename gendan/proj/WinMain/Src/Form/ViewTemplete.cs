@@ -100,6 +100,7 @@ namespace WindowsFormsTemplete
 
             //重新设置close在窗口的位置
             this.button_close.Location = (new Point(this.Width - this.button_close.Width - 5, 5));
+            this.picbox_close.Location = (new Point(this.Width - this.button_close.Width - 5, 5));
 
             //重定位窗口位置
             //
@@ -194,6 +195,21 @@ namespace WindowsFormsTemplete
         private void panelfrom_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void picbox_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void picbox_close_MouseEnter(object sender, EventArgs e)
+        {
+            this.picbox_close.BackColor = col_enter_picbox_close;
+        }
+
+        private void picbox_close_MouseLeave(object sender, EventArgs e)
+        {
+            this.picbox_close.BackColor = col_leave_picbox_close;
         }
     }
 }

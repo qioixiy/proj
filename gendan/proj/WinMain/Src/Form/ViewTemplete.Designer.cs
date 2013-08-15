@@ -34,8 +34,10 @@
             this.label_typename = new System.Windows.Forms.Label();
             this.panelfrom = new System.Windows.Forms.Panel();
             this.pictureBox_back = new System.Windows.Forms.PictureBox();
+            this.picbox_close = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_typename)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).BeginInit();
             this.SuspendLayout();
             // 
             // button_close
@@ -94,11 +96,24 @@
             this.pictureBox_back.TabIndex = 5;
             this.pictureBox_back.TabStop = false;
             // 
+            // picbox_close
+            // 
+            this.picbox_close.BackColor = System.Drawing.Color.Teal;
+            this.picbox_close.Location = new System.Drawing.Point(580, 6);
+            this.picbox_close.Name = "picbox_close";
+            this.picbox_close.Size = new System.Drawing.Size(32, 24);
+            this.picbox_close.TabIndex = 6;
+            this.picbox_close.TabStop = false;
+            this.picbox_close.Click += new System.EventHandler(this.picbox_close_Click);
+            this.picbox_close.MouseEnter += new System.EventHandler(this.picbox_close_MouseEnter);
+            this.picbox_close.MouseLeave += new System.EventHandler(this.picbox_close_MouseLeave);
+            // 
             // ViewTemplete
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(674, 357);
+            this.Controls.Add(this.picbox_close);
             this.Controls.Add(this.panelfrom);
             this.Controls.Add(this.label_typename);
             this.Controls.Add(this.pictureBox_typename);
@@ -121,6 +136,7 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ViewTemplete_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_typename)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +161,15 @@
 
         private System.Windows.Forms.Panel panelfrom;
         private System.Windows.Forms.PictureBox pictureBox_back;
+
+        //close and mini
+        private System.Windows.Forms.PictureBox picbox_close;
+        private System.Drawing.Color col_enter_picbox_close = System.Drawing.Color.PaleGreen;
+        private System.Drawing.Color col_leave_picbox_close = System.Drawing.Color.Teal;
+
+        //private System.Windows.Forms.PictureBox picbox_mini;
+        //private System.Drawing.Color col_enter_picbox_mini = System.Drawing.Color.PaleGreen;
+        //private System.Drawing.Color col_leave_picbox_mini = System.Drawing.Color.Teal;
+
     }
 }

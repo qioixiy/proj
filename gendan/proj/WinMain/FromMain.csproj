@@ -65,6 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Src\Data\Itembase.cs" />
+    <Compile Include="Src\Data\品牌.cs" />
+    <Compile Include="Src\Data\商标.cs" />
+    <Compile Include="Src\Data\客户.cs" />
+    <Compile Include="Src\Data\物料\辅料.cs" />
+    <Compile Include="Src\Data\物料\面料.cs" />
+    <Compile Include="Src\Data\订单.cs" />
     <Compile Include="Src\Form\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +276,7 @@
       <DependentUpon>面料.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -361,9 +369,7 @@
   <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Src\Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

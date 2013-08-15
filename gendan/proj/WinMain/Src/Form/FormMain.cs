@@ -284,5 +284,35 @@ namespace FormMain
         {
 
         }
+
+        private void picbox_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+
+        private void picbox_mini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void picbox_close_MouseEnter(object sender, EventArgs e)
+        {
+            this.picbox_close.BackColor = col_enter_picbox_close;
+        }
+
+        private void picbox_close_MouseLeave(object sender, EventArgs e)
+        {
+            this.picbox_close.BackColor = col_leave_picbox_close;
+        }
+
+        private void picbox_mini_MouseEnter(object sender, EventArgs e)
+        {
+            this.picbox_mini.BackColor = col_enter_picbox_mini;
+        }
+
+        private void picbox_mini_MouseLeave(object sender, EventArgs e)
+        {
+            this.picbox_mini.BackColor = col_leave_picbox_mini;
+        }
     }
 }
