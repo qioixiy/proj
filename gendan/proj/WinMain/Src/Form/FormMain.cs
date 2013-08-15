@@ -102,7 +102,7 @@ namespace FormMain
         {
             Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea;
             //Width = rect.Width;
-            Height = rect.Height;
+            Height = rect.Height - 50;
             this.Location = new Point(0, 0);
 
             TitleItem temp_item = new TitleItem();

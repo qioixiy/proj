@@ -42,7 +42,7 @@ namespace FormMain
             // button3
             // 
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(223, 472);
+            this.button3.Location = new System.Drawing.Point(166, 472);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 21);
             this.button3.TabIndex = 4;
@@ -54,7 +54,7 @@ namespace FormMain
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(223, 504);
+            this.button2.Location = new System.Drawing.Point(166, 499);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 3;
@@ -67,7 +67,7 @@ namespace FormMain
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(233, 445);
+            this.button1.Location = new System.Drawing.Point(166, 445);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace FormMain
             this.btn_mini.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mini.ForeColor = System.Drawing.Color.Black;
-            this.btn_mini.Location = new System.Drawing.Point(248, 3);
+            this.btn_mini.Location = new System.Drawing.Point(186, 3);
             this.btn_mini.Name = "btn_mini";
             this.btn_mini.Size = new System.Drawing.Size(23, 23);
             this.btn_mini.TabIndex = 5;
@@ -94,7 +94,7 @@ namespace FormMain
             this.btn_close.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.ForeColor = System.Drawing.Color.Black;
-            this.btn_close.Location = new System.Drawing.Point(277, 3);
+            this.btn_close.Location = new System.Drawing.Point(212, 3);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(29, 23);
             this.btn_close.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace FormMain
             this.label_menu.AutoSize = true;
             this.label_menu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label_menu.ForeColor = System.Drawing.Color.Black;
-            this.label_menu.Location = new System.Drawing.Point(55, 6);
+            this.label_menu.Location = new System.Drawing.Point(50, 9);
             this.label_menu.Name = "label_menu";
             this.label_menu.Size = new System.Drawing.Size(65, 12);
             this.label_menu.TabIndex = 7;
@@ -117,7 +117,7 @@ namespace FormMain
             // 
             this.pictureBox1.BackgroundImage = global::WindowsFormsTemplete.Properties.Resources.logo_png;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 23);
             this.pictureBox1.TabIndex = 8;
@@ -137,7 +137,7 @@ namespace FormMain
             this.chatListBox1.ScrollArrowBackColor = System.Drawing.Color.WhiteSmoke;
             this.chatListBox1.ScrollSliderDefaultColor = System.Drawing.Color.Silver;
             this.chatListBox1.ScrollSliderDownColor = System.Drawing.Color.DimGray;
-            this.chatListBox1.Size = new System.Drawing.Size(305, 507);
+            this.chatListBox1.Size = new System.Drawing.Size(238, 507);
             this.chatListBox1.TabIndex = 2;
             this.chatListBox1.Text = "chatListBox1";
             this.chatListBox1.DoubleClickSubItem += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_DoubleClickSubItem);
@@ -151,7 +151,7 @@ namespace FormMain
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(310, 549);
+            this.ClientSize = new System.Drawing.Size(247, 549);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_menu);
             this.Controls.Add(this.btn_close);
