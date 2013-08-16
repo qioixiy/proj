@@ -156,7 +156,7 @@
         }
         public void set_pictureBox_typenameBackgroundImage()
         {
-            this.pictureBox_typename.BackgroundImage = FormMain.FormMain.getHeadImage(this.typename);
+            this.pictureBox_typename.BackgroundImage = MenuMain.MenuMain.getHeadImage(this.typename);
         }
 
         private System.Windows.Forms.Panel panelfrom;
