@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WindowsFormsTemplete.Src.Data
+namespace Src.Data
 {
     class 品牌
     {
