@@ -112,7 +112,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(674, 357);
+            this.ClientSize = new System.Drawing.Size(1280, 676);
             this.Controls.Add(this.picbox_close);
             this.Controls.Add(this.panelfrom);
             this.Controls.Add(this.label_typename);
@@ -128,6 +128,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewTemplete";
             this.TransparencyKey = System.Drawing.Color.MintCream;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.ViewTemplete_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.ViewTemplete_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ViewTemplete_MouseDown);

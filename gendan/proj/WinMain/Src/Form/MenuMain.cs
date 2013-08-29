@@ -180,6 +180,8 @@ namespace MenuMain
         private void chatListBox1_DoubleClickSubItem(object sender, ChatListEventArgs e) {
             //MessageBox.Show(e.SelectSubItem.DisplayName);
             WindowsFormsTemplete.ViewTemplete from = new WindowsFormsTemplete.ViewTemplete(e.SelectSubItem.DisplayName);
+            from.Hide();
+            from.WindowState = FormWindowState.Normal;
             from.Show();
 
             //Form form = get_class(e.SelectSubItem.DisplayName);
