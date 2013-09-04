@@ -31,15 +31,11 @@ namespace MenuMain
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btn_mini = new System.Windows.Forms.Button();
-            this.btn_close = new System.Windows.Forms.Button();
             this.label_menu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chatListBox1 = new _CUSTOM_CONTROLS.ChatListBox();
-            this.picbox_close = new System.Windows.Forms.PictureBox();
             this.picbox_mini = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_mini)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,33 +74,6 @@ namespace MenuMain
             this.button1.Text = "闪烁";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_mini
-            // 
-            this.btn_mini.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btn_mini.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mini.ForeColor = System.Drawing.Color.Black;
-            this.btn_mini.Location = new System.Drawing.Point(186, 3);
-            this.btn_mini.Name = "btn_mini";
-            this.btn_mini.Size = new System.Drawing.Size(23, 25);
-            this.btn_mini.TabIndex = 5;
-            this.btn_mini.Text = "--";
-            this.btn_mini.UseVisualStyleBackColor = false;
-            this.btn_mini.Click += new System.EventHandler(this.btn_mini_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.ForeColor = System.Drawing.Color.Black;
-            this.btn_close.Location = new System.Drawing.Point(212, 3);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(29, 25);
-            this.btn_close.TabIndex = 6;
-            this.btn_close.Text = "X";
-            this.btn_close.UseVisualStyleBackColor = false;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // label_menu
             // 
@@ -149,22 +118,10 @@ namespace MenuMain
             this.chatListBox1.MouseLeaveHead += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_MouseLeaveHead);
             this.chatListBox1.Click += new System.EventHandler(this.chatListBox1_Click);
             // 
-            // picbox_close
-            // 
-            this.picbox_close.BackColor = System.Drawing.Color.Teal;
-            this.picbox_close.Location = new System.Drawing.Point(212, 3);
-            this.picbox_close.Name = "picbox_close";
-            this.picbox_close.Size = new System.Drawing.Size(32, 25);
-            this.picbox_close.TabIndex = 9;
-            this.picbox_close.TabStop = false;
-            this.picbox_close.Click += new System.EventHandler(this.picbox_close_Click);
-            this.picbox_close.MouseEnter += new System.EventHandler(this.picbox_close_MouseEnter);
-            this.picbox_close.MouseLeave += new System.EventHandler(this.picbox_close_MouseLeave);
-            // 
             // picbox_mini
             // 
             this.picbox_mini.BackColor = System.Drawing.Color.Teal;
-            this.picbox_mini.Location = new System.Drawing.Point(178, 3);
+            this.picbox_mini.Location = new System.Drawing.Point(209, 3);
             this.picbox_mini.Name = "picbox_mini";
             this.picbox_mini.Size = new System.Drawing.Size(32, 25);
             this.picbox_mini.TabIndex = 10;
@@ -181,11 +138,8 @@ namespace MenuMain
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(247, 595);
             this.Controls.Add(this.picbox_mini);
-            this.Controls.Add(this.picbox_close);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_menu);
-            this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.btn_mini);
             this.Controls.Add(this.chatListBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -207,7 +161,6 @@ namespace MenuMain
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuMain_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MenuMain_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox_close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_mini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,14 +185,10 @@ namespace MenuMain
         }
 
         private List<TitleItem> title = new List<TitleItem>();
-        private System.Windows.Forms.Button btn_mini;
-        private System.Windows.Forms.Button btn_close;
         private bool mouse_push_status = false;
         private System.Drawing.Point mouse_offset;
         private System.Windows.Forms.Label label_menu;
         private System.Windows.Forms.PictureBox pictureBox1;
-
-        private System.Windows.Forms.PictureBox picbox_close;
         private System.Drawing.Color col_enter_picbox_close = System.Drawing.Color.PaleGreen;
         private System.Drawing.Color col_leave_picbox_close = System.Drawing.Color.Teal;
 

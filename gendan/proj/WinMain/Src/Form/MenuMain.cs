@@ -103,7 +103,7 @@ namespace MenuMain
             Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea;
             //Width = rect.Width;
             Height = rect.Height - 50;
-            this.Location = new Point(0, 25);
+            this.Location = new Point(10, 40);
 
             TitleItem temp_item = new TitleItem();
             temp_item.MainTitle = "订单管理";
@@ -287,25 +287,9 @@ namespace MenuMain
 
         }
 
-        private void picbox_close_Click(object sender, EventArgs e)
-        {
-            //Application.Exit();
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void picbox_mini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void picbox_close_MouseEnter(object sender, EventArgs e)
-        {
-            this.picbox_close.BackColor = col_enter_picbox_close;
-        }
-
-        private void picbox_close_MouseLeave(object sender, EventArgs e)
-        {
-            this.picbox_close.BackColor = col_leave_picbox_close;
         }
 
         private void picbox_mini_MouseEnter(object sender, EventArgs e)

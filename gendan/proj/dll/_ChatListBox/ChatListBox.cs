@@ -500,8 +500,8 @@ namespace _CUSTOM_CONTROLS
             sf.Alignment = StringAlignment.Near;
             g.DrawString(strItem, this.Font, sb, rectItem, sf);
             sf.Alignment = StringAlignment.Far;
-            g.DrawString("[" + item.SubItems.GetOnLineNumber() + "/" + item.SubItems.Count + "]", this.Font, sb,
-                new Rectangle(rectItem.X, rectItem.Y, rectItem.Width - 15, rectItem.Height), sf);
+            //g.DrawString("[" + item.SubItems.GetOnLineNumber() + "/" + item.SubItems.Count + "]", this.Font, sb,
+            //    new Rectangle(rectItem.X, rectItem.Y, rectItem.Width - 15, rectItem.Height), sf);
         }
         /// <summary>
         /// 绘制列表子项
