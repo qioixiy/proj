@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace MenuMain
+namespace MainForm
 {
     static class Program
     {
@@ -13,7 +13,7 @@ namespace MenuMain
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuMain());
+            Application.Run(new MainForm());
         }
     }
 }

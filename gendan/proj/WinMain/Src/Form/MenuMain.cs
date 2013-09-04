@@ -103,7 +103,7 @@ namespace MenuMain
             Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea;
             //Width = rect.Width;
             Height = rect.Height - 50;
-            this.Location = new Point(0, 0);
+            this.Location = new Point(0, 25);
 
             TitleItem temp_item = new TitleItem();
             temp_item.MainTitle = "订单管理";
@@ -289,7 +289,8 @@ namespace MenuMain
 
         private void picbox_close_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            //Application.Exit();
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void picbox_mini_Click(object sender, EventArgs e)

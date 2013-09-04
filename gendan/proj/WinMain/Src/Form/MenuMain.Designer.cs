@@ -46,9 +46,9 @@ namespace MenuMain
             // button3
             // 
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(166, 472);
+            this.button3.Location = new System.Drawing.Point(166, 511);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 21);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "大/小图标";
             this.button3.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@ namespace MenuMain
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(166, 499);
+            this.button2.Location = new System.Drawing.Point(166, 541);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "插入";
             this.button2.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@ namespace MenuMain
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(166, 445);
+            this.button1.Location = new System.Drawing.Point(166, 482);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "闪烁";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@ namespace MenuMain
             this.btn_mini.ForeColor = System.Drawing.Color.Black;
             this.btn_mini.Location = new System.Drawing.Point(186, 3);
             this.btn_mini.Name = "btn_mini";
-            this.btn_mini.Size = new System.Drawing.Size(23, 23);
+            this.btn_mini.Size = new System.Drawing.Size(23, 25);
             this.btn_mini.TabIndex = 5;
             this.btn_mini.Text = "--";
             this.btn_mini.UseVisualStyleBackColor = false;
@@ -100,7 +100,7 @@ namespace MenuMain
             this.btn_close.ForeColor = System.Drawing.Color.Black;
             this.btn_close.Location = new System.Drawing.Point(212, 3);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(29, 23);
+            this.btn_close.Size = new System.Drawing.Size(29, 25);
             this.btn_close.TabIndex = 6;
             this.btn_close.Text = "X";
             this.btn_close.UseVisualStyleBackColor = false;
@@ -111,9 +111,9 @@ namespace MenuMain
             this.label_menu.AutoSize = true;
             this.label_menu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label_menu.ForeColor = System.Drawing.Color.Black;
-            this.label_menu.Location = new System.Drawing.Point(50, 9);
+            this.label_menu.Location = new System.Drawing.Point(50, 10);
             this.label_menu.Name = "label_menu";
-            this.label_menu.Size = new System.Drawing.Size(65, 12);
+            this.label_menu.Size = new System.Drawing.Size(67, 13);
             this.label_menu.TabIndex = 7;
             this.label_menu.Text = "跟单主菜单";
             // 
@@ -123,7 +123,7 @@ namespace MenuMain
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(5, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,12 +136,12 @@ namespace MenuMain
             this.chatListBox1.BackColor = System.Drawing.Color.White;
             this.chatListBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.chatListBox1.ItemColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.chatListBox1.Location = new System.Drawing.Point(3, 30);
+            this.chatListBox1.Location = new System.Drawing.Point(3, 33);
             this.chatListBox1.Name = "chatListBox1";
             this.chatListBox1.ScrollArrowBackColor = System.Drawing.Color.WhiteSmoke;
             this.chatListBox1.ScrollSliderDefaultColor = System.Drawing.Color.Silver;
             this.chatListBox1.ScrollSliderDownColor = System.Drawing.Color.DimGray;
-            this.chatListBox1.Size = new System.Drawing.Size(238, 507);
+            this.chatListBox1.Size = new System.Drawing.Size(238, 549);
             this.chatListBox1.TabIndex = 2;
             this.chatListBox1.Text = "chatListBox1";
             this.chatListBox1.DoubleClickSubItem += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_DoubleClickSubItem);
@@ -154,7 +154,7 @@ namespace MenuMain
             this.picbox_close.BackColor = System.Drawing.Color.Teal;
             this.picbox_close.Location = new System.Drawing.Point(212, 3);
             this.picbox_close.Name = "picbox_close";
-            this.picbox_close.Size = new System.Drawing.Size(32, 23);
+            this.picbox_close.Size = new System.Drawing.Size(32, 25);
             this.picbox_close.TabIndex = 9;
             this.picbox_close.TabStop = false;
             this.picbox_close.Click += new System.EventHandler(this.picbox_close_Click);
@@ -166,7 +166,7 @@ namespace MenuMain
             this.picbox_mini.BackColor = System.Drawing.Color.Teal;
             this.picbox_mini.Location = new System.Drawing.Point(178, 3);
             this.picbox_mini.Name = "picbox_mini";
-            this.picbox_mini.Size = new System.Drawing.Size(32, 23);
+            this.picbox_mini.Size = new System.Drawing.Size(32, 25);
             this.picbox_mini.TabIndex = 10;
             this.picbox_mini.TabStop = false;
             this.picbox_mini.Click += new System.EventHandler(this.picbox_mini_Click);
@@ -175,11 +175,11 @@ namespace MenuMain
             // 
             // MenuMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(247, 549);
+            this.ClientSize = new System.Drawing.Size(247, 595);
             this.Controls.Add(this.picbox_mini);
             this.Controls.Add(this.picbox_close);
             this.Controls.Add(this.pictureBox1);
@@ -191,11 +191,12 @@ namespace MenuMain
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MenuMain";
+            this.ShowInTaskbar = false;
             this.Text = "跟单主菜单";
             this.TransparencyKey = System.Drawing.Color.MintCream;
             this.Load += new System.EventHandler(this.MenuMain_Load);
