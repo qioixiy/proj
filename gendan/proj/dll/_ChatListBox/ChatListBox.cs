@@ -515,6 +515,19 @@ namespace _CUSTOM_CONTROLS
                 rectSubItem.Height = (int)ChatListItemIcon.Large;   //如果选中则绘制成大图标
                 sb.Color = this.subItemSelectColor;
                 g.FillRectangle(sb, rectSubItem);
+                
+                //对color进行变换
+                for (int i = rectSubItem.Height; i > 0; i--)
+                {
+                    if (sb.Color.R - i * 3 >= 0//先保证RGB值在合理范围内
+                        && sb.Color.G - i * 3 >= 0)
+                    {
+                        g.DrawLine(new Pen(Color.FromArgb(100, sb.Color.R - i * 3, sb.Color.G - i * 3, sb.Color.B)),
+                            rectSubItem.Left, rectSubItem.Top + i,
+                            rectSubItem.Right, rectSubItem.Top + i);
+                    }
+                }
+
                 DrawHeadImage(g, subItem, rectSubItem);         //绘制头像
                 DrawLargeSubItem(g, subItem, rectSubItem);      //绘制大图标 显示的个人信息
                 subItem.Bounds = new Rectangle(rectSubItem.Location, rectSubItem.Size);
@@ -523,7 +536,19 @@ namespace _CUSTOM_CONTROLS
                 sb.Color = this.subItemMouseOnColor;
             else
                 sb.Color = this.subItemColor;
-            g.FillRectangle(sb, rectSubItem);
+            g.FillRectangle(sb, rectSubItem);//
+
+            //对color进行变换
+            for (int i = rectSubItem.Height; i > 0; i--) {
+                if (sb.Color.R - i * 3 >= 0
+                    && sb.Color.R - i * 3 >= 0)
+                {
+                    g.DrawLine(new Pen(Color.FromArgb(100, sb.Color.R - i * 3, sb.Color.G - i * 3, sb.Color.B)), 
+                        rectSubItem.Left, rectSubItem.Top+i,
+                        rectSubItem.Right, rectSubItem.Top+i);
+                }
+            }
+
             DrawHeadImage(g, subItem, rectSubItem);
 
             if (iconSizeMode == ChatListItemIcon.Large)         //没有选中则根据 图标模式绘制
