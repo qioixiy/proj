@@ -609,7 +609,7 @@ namespace _CUSTOM_CONTROLS
             Size szFont = TextRenderer.MeasureText(strDraw, this.Font);
             if (szFont.Width > 0) {             //判断是否有备注名称
                 g.DrawString(strDraw, this.Font, Brushes.Black, rectSubItem.Height, rectSubItem.Top + 5);
-                g.DrawString("(" + subItem.NicName + ")",
+                g.DrawString(subItem.NicName,
                     this.Font, Brushes.Gray, rectSubItem.Height + szFont.Width, rectSubItem.Top + 5);
             } else {                            //如果没有备注名称 这直接绘制昵称
                 g.DrawString(subItem.NicName, this.Font, Brushes.Black, rectSubItem.Height, rectSubItem.Top + 5);

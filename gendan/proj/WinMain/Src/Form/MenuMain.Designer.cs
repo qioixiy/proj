@@ -33,8 +33,8 @@ namespace MenuMain
             this.button1 = new System.Windows.Forms.Button();
             this.label_menu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.chatListBox1 = new _CUSTOM_CONTROLS.ChatListBox();
             this.picbox_mini = new System.Windows.Forms.PictureBox();
+            this.chatListBox1 = new _CUSTOM_CONTROLS.ChatListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbox_mini)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +42,7 @@ namespace MenuMain
             // button3
             // 
             this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(166, 511);
+            this.button3.Location = new System.Drawing.Point(68, 505);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -54,7 +54,7 @@ namespace MenuMain
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(166, 541);
+            this.button2.Location = new System.Drawing.Point(68, 534);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -67,7 +67,7 @@ namespace MenuMain
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(166, 482);
+            this.button1.Location = new System.Drawing.Point(4, 476);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -80,11 +80,11 @@ namespace MenuMain
             this.label_menu.AutoSize = true;
             this.label_menu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label_menu.ForeColor = System.Drawing.Color.Black;
-            this.label_menu.Location = new System.Drawing.Point(50, 10);
+            this.label_menu.Location = new System.Drawing.Point(40, 10);
             this.label_menu.Name = "label_menu";
-            this.label_menu.Size = new System.Drawing.Size(67, 13);
+            this.label_menu.Size = new System.Drawing.Size(43, 13);
             this.label_menu.TabIndex = 7;
-            this.label_menu.Text = "跟单主菜单";
+            this.label_menu.Text = "主菜单";
             // 
             // pictureBox1
             // 
@@ -95,6 +95,19 @@ namespace MenuMain
             this.pictureBox1.Size = new System.Drawing.Size(29, 25);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            // 
+            // picbox_mini
+            // 
+            this.picbox_mini.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picbox_mini.Location = new System.Drawing.Point(150, 4);
+            this.picbox_mini.Name = "picbox_mini";
+            this.picbox_mini.Size = new System.Drawing.Size(25, 25);
+            this.picbox_mini.TabIndex = 10;
+            this.picbox_mini.TabStop = false;
+            this.picbox_mini.Click += new System.EventHandler(this.picbox_mini_Click);
+            this.picbox_mini.Paint += new System.Windows.Forms.PaintEventHandler(this.picbox_mini_Paint);
+            this.picbox_mini.MouseEnter += new System.EventHandler(this.picbox_mini_MouseEnter);
+            this.picbox_mini.MouseLeave += new System.EventHandler(this.picbox_mini_MouseLeave);
             // 
             // chatListBox1
             // 
@@ -110,7 +123,7 @@ namespace MenuMain
             this.chatListBox1.ScrollArrowBackColor = System.Drawing.Color.WhiteSmoke;
             this.chatListBox1.ScrollSliderDefaultColor = System.Drawing.Color.Silver;
             this.chatListBox1.ScrollSliderDownColor = System.Drawing.Color.DimGray;
-            this.chatListBox1.Size = new System.Drawing.Size(238, 549);
+            this.chatListBox1.Size = new System.Drawing.Size(172, 549);
             this.chatListBox1.TabIndex = 2;
             this.chatListBox1.Text = "chatListBox1";
             this.chatListBox1.DoubleClickSubItem += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_DoubleClickSubItem);
@@ -118,25 +131,13 @@ namespace MenuMain
             this.chatListBox1.MouseLeaveHead += new _CUSTOM_CONTROLS.ChatListBox.ChatListEventHandler(this.chatListBox1_MouseLeaveHead);
             this.chatListBox1.Click += new System.EventHandler(this.chatListBox1_Click);
             // 
-            // picbox_mini
-            // 
-            this.picbox_mini.BackColor = System.Drawing.Color.Teal;
-            this.picbox_mini.Location = new System.Drawing.Point(209, 3);
-            this.picbox_mini.Name = "picbox_mini";
-            this.picbox_mini.Size = new System.Drawing.Size(32, 25);
-            this.picbox_mini.TabIndex = 10;
-            this.picbox_mini.TabStop = false;
-            this.picbox_mini.Click += new System.EventHandler(this.picbox_mini_Click);
-            this.picbox_mini.MouseEnter += new System.EventHandler(this.picbox_mini_MouseEnter);
-            this.picbox_mini.MouseLeave += new System.EventHandler(this.picbox_mini_MouseLeave);
-            // 
             // MenuMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(247, 595);
+            this.ClientSize = new System.Drawing.Size(183, 595);
             this.Controls.Add(this.picbox_mini);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_menu);
@@ -192,6 +193,7 @@ namespace MenuMain
         private System.Drawing.Color col_enter_picbox_close = System.Drawing.Color.PaleGreen;
         private System.Drawing.Color col_leave_picbox_close = System.Drawing.Color.Teal;
 
+        private bool mouse_enter_picbox_mini = false;
         private System.Windows.Forms.PictureBox picbox_mini;
         private System.Drawing.Color col_enter_picbox_mini = System.Drawing.Color.PaleGreen;
         private System.Drawing.Color col_leave_picbox_mini = System.Drawing.Color.Teal;

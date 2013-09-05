@@ -149,7 +149,7 @@ namespace MenuMain
             for (int i = 0; i < title.Count; i++) {
                 ChatListItem item = new ChatListItem(title[i].MainTitle);
                 for (int j = 0; j < title[i].SubItem.Count; j++) {
-                    ChatListSubItem subItem = new ChatListSubItem("注释", title[i].SubItem[j], "说明");
+                    ChatListSubItem subItem = new ChatListSubItem("", title[i].SubItem[j], "");//注释说明
                     subItem.HeadImage = getHeadImage(title[i].SubItem[j]);
                     subItem.Status = (ChatListSubItem.UserStatus)(j % 6);
                     item.SubItems.AddAccordingToStatus(subItem);
@@ -294,12 +294,33 @@ namespace MenuMain
 
         private void picbox_mini_MouseEnter(object sender, EventArgs e)
         {
-            this.picbox_mini.BackColor = col_enter_picbox_mini;
+            mouse_enter_picbox_mini = true;//进入标志
+            this.picbox_mini.Refresh();
         }
 
         private void picbox_mini_MouseLeave(object sender, EventArgs e)
         {
-            this.picbox_mini.BackColor = col_leave_picbox_mini;
+            mouse_enter_picbox_mini = false;
+            this.picbox_mini.Refresh();
+        }
+
+        private void picbox_mini_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+
+            if (mouse_enter_picbox_mini)
+            {
+                g.Clear(Color.SlateGray);
+            }
+            else
+            {
+                g.Clear(FromMain_color);
+            }
+
+            Brush b = new SolidBrush(Color.DarkSlateGray);
+            g.FillRectangle(b,
+                5, this.picbox_mini.Height / 2 - 2,
+                this.picbox_mini.Width - 10, 4);
         }
     }
 }
