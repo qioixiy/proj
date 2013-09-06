@@ -15,7 +15,8 @@ namespace MenuMain
     {
         public Color FromMain_color;
 
-        public MenuMain() {
+        public MenuMain()
+        {
             InitializeComponent();
             FromMain_color = Color.LightGray;
         }
@@ -71,33 +72,33 @@ namespace MenuMain
                 case "出货记录":
                     return global::WindowsFormsTemplete.Properties.Resources.出货记录;
                 case "快递记录":
-                    return global::WindowsFormsTemplete.Properties.Resources.快递记录; 
+                    return global::WindowsFormsTemplete.Properties.Resources.快递记录;
                 case "进度跟踪":
-                    return global::WindowsFormsTemplete.Properties.Resources.进度跟踪; 
+                    return global::WindowsFormsTemplete.Properties.Resources.进度跟踪;
                 case "工作日历":
-                    return global::WindowsFormsTemplete.Properties.Resources.工作日历; 
+                    return global::WindowsFormsTemplete.Properties.Resources.工作日历;
                 case "面料":
-                    return global::WindowsFormsTemplete.Properties.Resources.面料; 
+                    return global::WindowsFormsTemplete.Properties.Resources.面料;
                 case "辅料":
-                    return global::WindowsFormsTemplete.Properties.Resources.辅料; 
+                    return global::WindowsFormsTemplete.Properties.Resources.辅料;
                 case "特殊工艺":
-                    return global::WindowsFormsTemplete.Properties.Resources.特殊工艺; 
+                    return global::WindowsFormsTemplete.Properties.Resources.特殊工艺;
                 case "客户":
                     return global::WindowsFormsTemplete.Properties.Resources.客户;
                 case "服装厂":
-                    return global::WindowsFormsTemplete.Properties.Resources.服装厂; 
+                    return global::WindowsFormsTemplete.Properties.Resources.服装厂;
                 case "其他厂商":
-                    return global::WindowsFormsTemplete.Properties.Resources.其他厂商; 
+                    return global::WindowsFormsTemplete.Properties.Resources.其他厂商;
                 case "联系人":
-                    return global::WindowsFormsTemplete.Properties.Resources.联系人; 
+                    return global::WindowsFormsTemplete.Properties.Resources.联系人;
                 case "文件库":
-                    return global::WindowsFormsTemplete.Properties.Resources.文件库; 
+                    return global::WindowsFormsTemplete.Properties.Resources.文件库;
 
                 default:
                     return global::WindowsFormsTemplete.Properties.Resources.其他厂商;
             }
         }
-       
+
         private void MenuMain_Load(object sender, EventArgs e)
         {
             Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea;
@@ -146,9 +147,11 @@ namespace MenuMain
 
             chatListBox1.Items.Clear();
             Random rnd = new Random();
-            for (int i = 0; i < title.Count; i++) {
+            for (int i = 0; i < title.Count; i++)
+            {
                 ChatListItem item = new ChatListItem(title[i].MainTitle);
-                for (int j = 0; j < title[i].SubItem.Count; j++) {
+                for (int j = 0; j < title[i].SubItem.Count; j++)
+                {
                     ChatListSubItem subItem = new ChatListSubItem("", title[i].SubItem[j], "");//注释说明
                     subItem.HeadImage = getHeadImage(title[i].SubItem[j]);
                     subItem.Status = (ChatListSubItem.UserStatus)(j % 6);
@@ -158,26 +161,31 @@ namespace MenuMain
                 chatListBox1.Items.Add(item);
             }
             ChatListItem itema = new ChatListItem("TEST");
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 5; i++)
+            {
                 chatListBox1.Items.Add(itema);
             }
             chatListBox1.Items.Remove(itema);
         }
 
-        private void button1_Click(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e)
+        {
             chatListBox1.Items[0].SubItems[0].IsTwinkle = !chatListBox1.Items[0].SubItems[0].IsTwinkle;
             chatListBox1.Items[0].SubItems[1].IsTwinkle = !chatListBox1.Items[0].SubItems[1].IsTwinkle;
         }
 
-        private void chatListBox1_MouseEnterHead(object sender, ChatListEventArgs e) {
+        private void chatListBox1_MouseEnterHead(object sender, ChatListEventArgs e)
+        {
             this.Text = e.MouseOnSubItem.DisplayName;
         }
 
-        private void chatListBox1_MouseLeaveHead(object sender, ChatListEventArgs e) {
+        private void chatListBox1_MouseLeaveHead(object sender, ChatListEventArgs e)
+        {
             this.Text = "Null";
         }
 
-        private void chatListBox1_DoubleClickSubItem(object sender, ChatListEventArgs e) {
+        private void chatListBox1_DoubleClickSubItem(object sender, ChatListEventArgs e)
+        {
             //MessageBox.Show(e.SelectSubItem.DisplayName);
             WindowsFormsTemplete.ViewTemplete from = new WindowsFormsTemplete.ViewTemplete(e.SelectSubItem.DisplayName);
             from.Hide();
@@ -189,7 +197,8 @@ namespace MenuMain
         }
 
         //插入subitem
-        private void button2_Click(object sender, EventArgs e) {
+        private void button2_Click(object sender, EventArgs e)
+        {
             //AddAccordingToStatus根据状态自己插入到正确位置
             //Add就是默认的添加
             //当然也可以用Add添加 然后用SubItem.Sort()进行一个排序
@@ -200,7 +209,8 @@ namespace MenuMain
                 );
         }
         //图标类型，大？小？
-        private void button3_Click(object sender, EventArgs e) {
+        private void button3_Click(object sender, EventArgs e)
+        {
             if (chatListBox1.IconSizeMode == ChatListItemIcon.Large)
                 chatListBox1.IconSizeMode = ChatListItemIcon.Small;
             else
@@ -219,7 +229,7 @@ namespace MenuMain
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void MenuMain_MouseDown(object sender, MouseEventArgs e)
@@ -260,7 +270,7 @@ namespace MenuMain
         private void MenuMain_Paint(object sender, PaintEventArgs e)
         {
             //this.BackColor = Color.Green;
-            
+
             pictureBox1.BackColor = FromMain_color;
             label_menu.BackColor = FromMain_color;
             this.TransparencyKey = BackColor;
