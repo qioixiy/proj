@@ -6,7 +6,7 @@ namespace _CUSTOM_CONTROLS._ChatListBox
 {
     public enum ChatListItemIcon
     {
-        Large = 50,
+        Large = 30,
         Small = 30
     }
 }

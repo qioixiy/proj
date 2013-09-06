@@ -58,6 +58,7 @@
     <Compile Include="_ChatListBox\ChatListSubItem.cs" />
     <Compile Include="_ChatListBox\ChatListSubItemConverter.cs" />
     <Compile Include="_ChatListBox\ChatListVScroll.cs" />
+    <Compile Include="_ChatListBox\Image_split.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muneBar_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
