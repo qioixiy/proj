@@ -578,7 +578,8 @@ namespace _CUSTOM_CONTROLS
             if (subItem.Status == ChatListSubItem.UserStatus.OffLine)
                 g.DrawImage(subItem.GetDarkImage(), subItem.HeadRect);
             else {
-                g.DrawImage(Image_split.Draw(17, 17), subItem.HeadRect);//绘制小图标
+                pairs_image image = new pairs_image();
+                g.DrawImage(image.get_image_from_name(subItem.DisplayName), subItem.HeadRect);//绘制小图标
 
                 /*
                 if (subItem.Status == ChatListSubItem.UserStatus.QMe)

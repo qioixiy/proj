@@ -99,7 +99,7 @@ namespace MenuMain
             // picbox_mini
             // 
             this.picbox_mini.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.picbox_mini.Location = new System.Drawing.Point(150, 4);
+            this.picbox_mini.Location = new System.Drawing.Point(152, 3);
             this.picbox_mini.Name = "picbox_mini";
             this.picbox_mini.Size = new System.Drawing.Size(25, 25);
             this.picbox_mini.TabIndex = 10;
@@ -118,7 +118,7 @@ namespace MenuMain
             this.chatListBox1.BackColor = System.Drawing.Color.White;
             this.chatListBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.chatListBox1.ItemColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.chatListBox1.Location = new System.Drawing.Point(3, 33);
+            this.chatListBox1.Location = new System.Drawing.Point(5, 33);
             this.chatListBox1.Name = "chatListBox1";
             this.chatListBox1.ScrollArrowBackColor = System.Drawing.Color.WhiteSmoke;
             this.chatListBox1.ScrollSliderDefaultColor = System.Drawing.Color.Silver;

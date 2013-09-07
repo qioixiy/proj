@@ -96,9 +96,6 @@
     <None Include="Resources\null.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\all.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\muneBar_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
