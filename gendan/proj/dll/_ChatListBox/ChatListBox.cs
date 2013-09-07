@@ -594,9 +594,9 @@ namespace _CUSTOM_CONTROLS
             }
 
             if (subItem.Equals(selectSubItem))              //根据是否选中头像绘制头像的外边框
-                g.DrawRectangle(Pens.Cyan, subItem.HeadRect);
+                ;//g.DrawRectangle(Pens.Cyan, subItem.HeadRect);
             else
-                g.DrawRectangle(Pens.Gray, subItem.HeadRect);
+                ;// g.DrawRectangle(Pens.Gray, subItem.HeadRect);
         }
         /// <summary>
         /// 绘制大图标模式的个人信息
