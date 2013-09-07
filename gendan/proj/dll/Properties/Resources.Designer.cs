@@ -122,5 +122,12 @@ namespace _CUSTOM_CONTROLS.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap table_icon {
+            get {
+                object obj = ResourceManager.GetObject("table_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -47,7 +47,6 @@ namespace _CUSTOM_CONTROLS._ChatListBox
             new paris("联系人", width*11, 0), 
             new paris("文件库", width*12, 0), 
             };
-
         }
 
         //通过名字获取image位置偏移
@@ -62,22 +61,32 @@ namespace _CUSTOM_CONTROLS._ChatListBox
                     break;
                 }
             }
-            return Image_split.Draw(pariss[i].x, pariss[i].y);
+            return Image_split.DrawOn_muneBar_icon(pariss[i].x, pariss[i].y);
         }
      };
 
     class Image_split
     {
-        public static Image Draw(int x, int y, int width = 17, int height = 17)
+        public static Image DrawOn_muneBar_icon(int x, int y, int width = 17, int height = 17)
+        {
+            return Draw(global::_CUSTOM_CONTROLS.Properties.Resources.muneBar_icon, x, y, width, height);
+        }
+
+        public static Image DrawOn_table_icon(int x, int y, int width = 7, int height = 7)
+        {
+            return Draw(global::_CUSTOM_CONTROLS.Properties.Resources.table_icon, x, y, width, height);
+        }
+
+        public static Image Draw(Image bm, int x = 0, int y = 0, int width = 17, int height = 17)
         {
             Bitmap bitmap = new Bitmap(width, height); //保存绘制图的对象
             Graphics graphics = Graphics.FromImage(bitmap);
-            GraphicsUnit units = GraphicsUnit.Pixel; 
+            GraphicsUnit units = GraphicsUnit.Pixel;
             Rectangle destRect = new Rectangle(0, 0, width, height); //目标矩形,显示图像的位置
             Rectangle srcRect = new Rectangle(x, y, width, height);  //源矩形,显示图像那一部分            
-            Image bit = global::_CUSTOM_CONTROLS.Properties.Resources.muneBar_icon;// Image.FromFile("muneBar_icon.png");
+            Image bit = bm;
 
-            graphics.DrawImage(bit, destRect, srcRect, units);   
+            graphics.DrawImage(bit, destRect, srcRect, units);
             return bitmap;
         }
     }
